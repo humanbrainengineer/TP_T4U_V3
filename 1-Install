@@ -1,4 +1,4 @@
-# TP_T4U_V3
+# TP_T4U_V3  #https://askubuntu.com/questions/802205/how-to-install-tp-link-archer-t4u-driver
 
 Works on Ubuntu 18.04.4 LTS with kernel head v5.3.xxx using this repo. which you will need to git clone into a local folder
 
