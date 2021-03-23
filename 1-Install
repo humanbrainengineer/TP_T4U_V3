@@ -1,0 +1,22 @@
+# TP_T4U_V3
+
+Works on Ubuntu 18.04.4 LTS with kernel head v5.3.xxx using this repo. which you will need to git clone into a local folder
+
+https://github.com/EntropicEffect/rtl8822bu
+
+git clone https://github.com/EntropicEffect/rtl8822bu
+Make sure you have build-essentials and dkms
+
+sudo apt-get install build-essential dkms
+After cloning, cd into that folder and run
+
+cd rtl8822bu
+make
+sudo make install
+sudo modprobe 88x2bu
+Then connect to your Wi-Fi (Hopefully, both 2.4GHz and 5GHz should be detectable now)
+
+Next, follow these steps to refine the installation and for an automatic rebuild on Ubuntu kernel image updates
+
+sudo dkms add .
+sudo dkms install -m 88x2bu -v 1.1
